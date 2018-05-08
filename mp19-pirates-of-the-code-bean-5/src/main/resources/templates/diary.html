@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Diary</title>
+</head>
+<body>
+<h1>Carina's Diary</h1>
+<p>The diary contains the secrets of how to find the Trident of Poseidon</p>
+<form th:action="@{/diary}" method="post">
+    <input type="submit" value="Destroy the Trident"/>
+</form>
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="Sign Out"/>
+</form>
+</div>
+</body>
+</html>

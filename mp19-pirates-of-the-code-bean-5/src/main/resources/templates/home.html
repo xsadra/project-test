@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Flying Dutchman</title>
+</head>
+<body>
+<h1>The Flying Dutchman</h1>
+<h4>is</h4>
+<h2 th:text="${status}">Cursed</h2>
+<a th:href="@{/diary}">Read diary</a>
+<form th:action="@{/logout}" method="post">
+    <input type="submit" value="Sign Out"/>
+</form>
+</body>
+</html>
